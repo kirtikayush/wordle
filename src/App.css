@@ -231,3 +231,20 @@ body {
 .reset-button:hover {
   background-color: #5a9955;
 }
+
+/* 📱 Mobile adjustments */
+@media (max-width: 600px) {
+  .title {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+}

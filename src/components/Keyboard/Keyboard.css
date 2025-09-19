@@ -9,19 +9,20 @@
 .keyboard-row {
   display: flex;
   justify-content: center;
-  margin: 4px 0;
+  margin: 2px 0;
   flex-wrap: nowrap;
+  /* background-color: red; */
 }
 
 .key {
-  margin: 2px;
-  padding: 12px;
-  border-radius: 6px;
+  margin: 2px 3px;
+  padding: 25px 0px;
+  border-radius: 3px;
   border: none;
-  background-color: #444;
+  background-color: #747474;
   color: white;
   font-weight: bold;
-  min-width: 40px;
+  min-width: 36px;
   cursor: pointer;
   transition: transform 0.1s ease, background 0.2s ease;
   flex: 1; /* allow keys to shrink/grow */
@@ -41,14 +42,14 @@
   background-color: #c9b458;
 }
 .key.gray {
-  background-color: #787c7e;
+  background-color: #343637;
 }
 
 /* 📱 Mobile adjustments */
 /* 📱 Mobile adjustments */
 @media (max-width: 600px) {
   .key {
-    padding: 10px; /* a bit larger tap area */
+    padding: 20px 2px; /* a bit larger tap area */
     font-size: 16px; /* slightly bigger text */
     max-width: px; /* give more room per key */
   }
@@ -60,7 +61,7 @@
 
 @media (max-width: 400px) {
   .key {
-    padding: 22px 2px; /* still decent size */
+    padding: 18px 2px; /* still decent size */
     font-size: 14px; /* keep text legible */
     max-width: 10px; /* avoid overcrowding */
   }

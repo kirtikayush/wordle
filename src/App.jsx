@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import words from "./words.json";
+import words_main from "./words_main.json";
 import "./App.css";
 import Menubar from "./components/Menubar/Menubar";
 import Keyboard from "./components/Keyboard/Keyboard";
@@ -29,8 +30,8 @@ function App() {
 
   // pick solution at start
   useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * words.length);
-    setSolution(words[randomIndex].toUpperCase());
+    const randomIndex = Math.floor(Math.random() * words_main.length);
+    setSolution(words_main[randomIndex].toUpperCase());
   }, []);
 
   // focus invisible input to capture keystrokes
@@ -203,6 +204,8 @@ function App() {
   return (
     <>
       <Menubar />
+
+      {/* {solution} */}
 
       <div
         className="board-container"
