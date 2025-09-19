@@ -27,16 +27,6 @@ Includes a custom on-screen keyboard, flip & typing animations, shake feedback f
   
 ---
 
-## 📂 Project Structure
-
-├── App.js            # Main game logic
-├── App.css           # Game styles & animations
-├── words.json        # List of valid guess words (~500)
-├── words_main.json   # Possible solutions
-├── components/
-│   ├── Keyboard/     # On-screen keyboard
-│   └── Menubar/      # Simple menu/header
-
 ## How to Run Locally
 
 1. Clone the repository
