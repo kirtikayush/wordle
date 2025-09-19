@@ -1,0 +1,134 @@
+.menubar {
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 50;
+    border-radius: 0 0 20px 5px;
+    box-sizing: border-box;
+}
+
+.menubar-title {
+    font-size: 1.5rem;
+    font-weight: regular;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.menubar-right {
+    padding: 4px;
+    display: flex;
+    font-size: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    /* background-color: red; */
+    /* Ensures alignment to right */
+}
+
+.help-icon {
+    width: 30px;
+    height: 30px;
+    /* background-color: #444; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.help-icon:hover {
+    /* background-color: #666; */
+    /* Slightly lighter shade on hover */
+    color: #ffd700;
+    transform: scale(1.1);
+    /* Slight grow effect */
+}
+
+.popup {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    width: 280px;
+    background: #000;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 100;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.popup.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.about-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.about-links a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.about-links a:hover {
+    color: #6aaa64;
+}
+
+.disclaimer {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: 10px;
+}
+.wordle {
+    height: 40px;
+    aspect-ratio: 1;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white {
+    background-color: white;
+    color: black;
+}
+
+.green {
+    background-color: #6aaa64;
+    color: black;
+}
+
+.yellow {
+    background-color: #c9b458;
+    color: black;
+}
+
+.grey {
+    background-color: #787c7e;
+    color: black;
+}
+

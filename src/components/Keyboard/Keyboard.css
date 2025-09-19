@@ -1,0 +1,71 @@
+.keyboard {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  margin: 4px 0;
+  flex-wrap: nowrap;
+}
+
+.key {
+  margin: 2px;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #444;
+  color: white;
+  font-weight: bold;
+  min-width: 40px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.2s ease;
+  flex: 1; /* allow keys to shrink/grow */
+  max-width: 60px; /* desktop max size */
+}
+
+.key:active {
+  transform: scale(0.92);
+  background-color: #555;
+}
+
+/* Wordle-like colors */
+.key.green {
+  background-color: #6aaa64;
+}
+.key.yellow {
+  background-color: #c9b458;
+}
+.key.gray {
+  background-color: #787c7e;
+}
+
+/* 📱 Mobile adjustments */
+/* 📱 Mobile adjustments */
+@media (max-width: 600px) {
+  .key {
+    padding: 10px; /* a bit larger tap area */
+    font-size: 16px; /* slightly bigger text */
+    max-width: px; /* give more room per key */
+  }
+
+  .keyboard {
+    transform: scale(0.95); /* keep almost full size */
+  }
+}
+
+@media (max-width: 400px) {
+  .key {
+    padding: 22px 2px; /* still decent size */
+    font-size: 14px; /* keep text legible */
+    max-width: 10px; /* avoid overcrowding */
+  }
+
+  .keyboard {
+    transform: scale(0.9);
+  }
+}
