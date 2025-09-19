@@ -1,44 +1,48 @@
-# Wordle Maybe - React App
+# 🎮 Wordle Clone (React)
 
-A simple Wordle clone built with React where players guess a 5-letter word in 6 tries.
+A responsive Wordle-like game built with **React**.  
+Includes a custom on-screen keyboard, flip & typing animations, shake feedback for invalid words, and full mobile support.  
 
-## Features
+---
 
-- Responsive Wordle grid with color-coded feedback
-- Shake animation for invalid words
-- Flip animation for letter evaluation
-- Game over screen with solution and reset option
-- Simple menubar with game instructions
+## ✨ Features
 
-## Technologies Used
+- 🎯 5-letter word guessing game
+- 🎹 Custom on-screen keyboard (works on desktop + mobile)
+- 🟩🟨⬛ Tile flip animations for feedback
+- ⌨️ Invisible input for desktop typing
+- 📱 Fully responsive board & keyboard
+- ❌ Shake animation for invalid words
+- 🔄 Random new word each game
+- 🚀 Deployable to GitHub Pages
 
-- React (with hooks)
-- CSS animations for visual feedback
-- words.json (containing a list of valid 5-letter words)
+---
 
-## Folder Structure
+## 🛠️ Tech Stack
 
-wordle/
-├── public/
-├── src/
-│ ├── components/
-│ │ ├── Menubar/
-│ │ │ └── Menubar.jsx
-│ │ │ └── Menubar.css
-│ │ └── words.json
-│ ├── App.jsx
-│ ├── App.css
-│ ├── index.jsx
-├── package.json
-├── vite.config.js
-└── README.md
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/) (fast dev server & build)
+- Vanilla CSS for animations
+- GitHub Pages for deployment
+  
+---
+
+## 📂 Project Structure
+
+├── App.js            # Main game logic
+├── App.css           # Game styles & animations
+├── words.json        # List of valid guess words (~500)
+├── words_main.json   # Possible solutions
+├── components/
+│   ├── Keyboard/     # On-screen keyboard
+│   └── Menubar/      # Simple menu/header
 
 ## How to Run Locally
 
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/kirtikayush/wordle-react.git
+   git clone https://github.com/kirtikayush/wordle.git
    cd wordle
    ```
 
